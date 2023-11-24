@@ -8,16 +8,17 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        product p = new product();
         System.out.println("Enter product data");
         System.out.println("Name: ");
-        p.name = sc.nextLine();
+        String name = sc.nextLine();
 
         System.out.println("Price: ");
-        p.price = sc.nextDouble();
+        double price = sc.nextDouble();
 
         System.out.println("Quantity: ");
-        p.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
+
+        product p = new product(name, price, quantity);
 
         System.out.println(p.toString());
 
