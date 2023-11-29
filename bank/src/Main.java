@@ -9,8 +9,6 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-
-
         System.out.print("Enter account number: ");
         int number = sc.nextInt();
 
@@ -20,11 +18,9 @@ public class Main {
         Account ac = new Account(number, name);
 
         System.out.print("Is there na initial deposit (y/n)? ");
-        String aux = sc.next();
-        String y = "y";
+        char aux = sc.next().charAt(0);
 
-
-        if(Objects.equals(aux, y)){
+        if(aux == 'y'){
             System.out.print("Enter initial deposit value: ");
             double deposit = sc.nextDouble();
             ac.deposit(deposit);

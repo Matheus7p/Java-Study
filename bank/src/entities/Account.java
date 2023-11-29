@@ -36,11 +36,11 @@ public class Account {
     }
 
     public void deposit(double deposit){
-        this.balance = this.balance + deposit;
+        this.balance += deposit;
     }
 
     public void withdraw(double withdraw){
-        this.balance = this.balance - withdraw - 5;
+        this.balance -= withdraw - 5;
     }
 
     public String toString(){
