@@ -34,7 +34,7 @@ public class Main {
                 }
             }
         }
-
+        
         System.out.println("Negative numbers: " + count);
         sc.close();
 
